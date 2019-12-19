@@ -16,16 +16,16 @@ import java.util.Scanner;
 public class Currency {
     public static void main(String[] args) {
         
-        int c=6;//Ask sir why its throwing an error
+        int c=0;//Ask sir why its throwing an error
         try{
             Scanner in= new Scanner(new FileInputStream("ringgit.txt"));
-//            while(in.hasNextLine()){
-//               in.nextLine();
-//                c++;
-//               
-//            }
-//            in.close();
-//            in= new Scanner(new FileInputStream("ringgit.txt"));    
+            while(in.hasNextLine()){
+               in.nextLine();
+                c++;
+               
+            }
+            in.close();
+            in= new Scanner(new FileInputStream("ringgit.txt"));    
              double [] amount= new double[c];
           String [] type= new String[c];
           int i=0;
